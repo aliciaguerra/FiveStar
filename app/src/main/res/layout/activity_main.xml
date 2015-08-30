@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/selectsplash">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to Select Damaged Area"
+        android:id="@+id/button"
+        android:onClick="sendLogin"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:textColor="#010101"
+        android:backgroundTint="#e2e2e2"
+        android:focusableInTouchMode="false"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:src="@drawable/audaexplore_logo" />
+
+</RelativeLayout>
